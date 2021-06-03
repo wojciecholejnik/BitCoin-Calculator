@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<head>
+  <title>BitCoint Calculator Widget</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main class="calc-container">
+    <article>
+      <header>
+        Dokonaj wymiany
+      </header>
+      <section>
+        <div class="input-container">
+          <label class="input-description">Kwota w PLN:</label>
+          <div class="input-wrapper">
+            <input id="PLN-input" type="number" value="50" min="0">
+            <button class="currency-button">PLN</button>
+          </div>
+        </div>
+        <div class="input-container">
+          <label for="BTC-input" class="input-description">Kwota w BTC:</label>
+          <div class="input-wrapper">
+            <input id="BTC-input" type="number" value="0.00035129" min="0">
+            <button class="currency-button">BTC</button>
+          </div>
+        </div>
+      </section>
+      <section class="text-info">
+        <p class="info">* Realizacja transakcji w 5 minut</p>
+        <p class="actually-rate">Aktualny kurs wymiany <span id="rate"></span> PLN</p>
+      </section>
+      <footer>
+        <a id="sell-or-buy" href="https://panel.bitclude.com/register">Kup lub Sprzedaj Bitcoiny</a>
+      </footer>
+    </article>
+  </main>
+  <script src="script.js" ></script>
+</body>
+
+</html>
