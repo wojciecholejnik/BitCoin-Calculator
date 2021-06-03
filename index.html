@@ -13,27 +13,26 @@
   <main class="calc-container">
     <article>
       <header>
-        Dokonaj wymiany
+        Kup bitcoiny
       </header>
       <section>
         <div class="input-container">
-          <label class="input-description">Kwota w PLN:</label>
+          <label class="input-description">Kwota w PLN:<i class="fas fa-info-circle"></i><span class="label-info">Tutaj wpisz ilośc waluty<br> jaką chcesz wymienić</span></label>
           <div class="input-wrapper">
+            <button class="currency-button"><img src="PL_Flag.png" width=25></button>
             <input id="PLN-input" type="number" value="50" min="0">
-            <button class="currency-button">PLN</button>
           </div>
         </div>
         <div class="input-container">
-          <label for="BTC-input" class="input-description">Kwota w BTC:</label>
+          <label for="BTC-input" class="input-description">Kwota w BTC: <i class="fas fa-info-circle"></i><span class="label-info">Tutaj wpisz ilośc waluty<br> jaką chcesz otrzymać</span></label>
           <div class="input-wrapper">
+            <button class="currency-button"><img src="BTC_Symbol.png" height=16></button>
             <input id="BTC-input" type="number" value="0.00035129" min="0">
-            <button class="currency-button">BTC</button>
           </div>
         </div>
       </section>
       <section class="text-info">
-        <p class="info">* Realizacja transakcji w 5 minut</p>
-        <p class="actually-rate">Aktualny kurs wymiany <span id="rate"></span> PLN</p>
+        <p class="actually-rate">1 BTC = <span id="rate"></span> PLN</p>
       </section>
       <footer>
         <a id="sell-or-buy" href="https://panel.bitclude.com/register">Kup lub Sprzedaj Bitcoiny</a>
@@ -41,6 +40,7 @@
     </article>
   </main>
   <script src="script.js" ></script>
+  <script src="https://kit.fontawesome.com/a151502233.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
